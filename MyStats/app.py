@@ -10,6 +10,8 @@ Run it locally:
     pip install -r requirements.txt
     streamlit run app.py
 It opens in your browser at http://localhost:8501.
+
+Copyright (c) 2026 Prabin Dawadi. All rights reserved.
 """
 
 import streamlit as st
@@ -28,3 +30,9 @@ f1_score_page = st.Page("apps/f1_score.py", title="F1-Score vs Ground Truth Elem
 # this file needs to change.
 pg = st.navigation([home_page, f1_score_page])
 pg.run()
+
+st.sidebar.markdown(
+    "<div style='margin-top: 2rem; color: #9aa2ad; font-size: 0.78rem;'>"
+    "© 2026 Prabin Dawadi</div>",
+    unsafe_allow_html=True,
+)
